@@ -28,6 +28,9 @@ model User {
   name     String
   username String
 
+  email    String
+  password String
+
   tweets Tweet[]
 
   createdAt DateTime @default(now())
