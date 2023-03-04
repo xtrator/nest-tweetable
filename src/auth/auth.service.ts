@@ -6,11 +6,11 @@ export class AuthService {
     return 'test service';
   }
 
-  login(): string {
-    return "I'm logged in";
+  login(): object {
+    return { message: "I'm logged in" };
   }
 
-  signup(): string {
-    return "I'm signed up";
+  signup(): object {
+    return { message: "I'm signed in" };
   }
 }
