@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+// with prisma/client, it generate types for User and Tweet models
 
 @Injectable({})
 export class AuthService {
