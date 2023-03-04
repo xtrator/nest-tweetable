@@ -24,13 +24,15 @@ export class AuthController {
     @Body()
     dto: AuthDto,
   ) {
-    console.log(dto);
-    return this.authService.login();
+    return this.authService.login(dto);
   }
 
   @Post('signup')
-  signup() {
-    return this.authService.signup();
+  signup(
+    @Body()
+    dto: AuthDto,
+  ) {
+    return this.authService.signup(dto);
   }
 
   // in nestjs, PIPES are functions that transform your data
