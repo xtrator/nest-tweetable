@@ -20,3 +20,13 @@ export class AuthDto {
   password: string;
   // we now need to tell nestjs to use validations pipes globally
 }
+
+export class LoginAuthDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
